@@ -1,7 +1,21 @@
+.body {
+  background-color: #CAFAFE;
+
+}
+
+.titles {
+  background-color: #97CAEF;
+}
+
 #form {
-  color: #55BCC9;
+  background-color: #55BCC9;
   font-weight: bold;
 }
+
+
+/* .form-item {
+  background-color: #CAFAFE;
+} */
 
 #form-wrapper {
   width: 100%;
@@ -9,16 +23,26 @@
   flex-direction: row;
 }
 
-#spy-list {
+/* #spy-list {
   background-color: #CAFAFE;
+} */
+
+.spy-list-item {
+background-color: #55BCC9;
+
 }
 
 li {
   list-style: none;
 }
 
+#submit {
+  background-color: #3FEEE6;
+  font-weight: bold;
+}
+
 #delete-all {
-  background-color: #CAFAFE;
+  background-color: #C3073F;
   font-weight: bold;
 }
 .aquish {

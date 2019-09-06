@@ -21,16 +21,32 @@ const createSpy = function (form) {
   spy.classList.add('spy-list-item');
 
   const name = document.createElement('h3');
-  name.textContent = form.name.value;
+  name.textContent = `Name: ${form.name.value}`;
   spy.appendChild(name);
 
   const government = document.createElement('h3');
-  government.textContent = form.government.value;
+  government.textContent = `Government: ${form.government.value}`;
   spy.appendChild(government);
 
   const defectability = document.createElement('h3');
-  defectability.textContent = form.defectability.value;
+  defectability.textContent = `Likelihood of defecting: ${form.defectability.value}`;
   spy.appendChild(defectability);
+
+  const trustworthiness = document.createElement('h3');
+  trustworthiness.textContent = `Trustworthiness: ${form.trustworthiness.value}`;
+  spy.appendChild(trustworthiness);
+
+  //delete a single list item - still working on this
+  // const delete = document.deleteElement()
+  // const listOfSpies = document.querySelector('#spy-list');
+  // deleteSpy.textContent = 'delete this spy';
+  // listOfSpies.removeChild(listOfSpies.childNodes[0]);
+  //
+  // function removeItem(spy) {
+  //         var itemToRemove = document.querySelector(spy);
+  //         itemToRemove.parentNode.removeChild(itemToRemove);
+  //       }
+
 
   return spy;
 }

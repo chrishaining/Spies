@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>D I Spy</h1>
-
+  <div class="titles">
+    <h1>D I Spy</h1>
+  </div>
   <!-- open the form -->
   <form id="form">
 
@@ -25,7 +26,7 @@
 
       </div>
 
-      <!-- open a div for the second form item -->
+      <!-- open a div for the second form item  - could make this a dropdown -->
       <div class="form-item">
         <!-- label for country of origin -->
         <label for="government" class="primary">Government</label>
@@ -35,28 +36,43 @@
       </div>
 
       <!-- open a div for the third form item -->
-      <div class="form"
+      <div class="radio">
+        <input type="radio" name="defectability" value="low"> Low</input>
+        <input type="radio" name="defectability" value="high"> High</input>
+      </div>
       <!-- label for trustworthiness-->
-      <label for="defectability" class="primary">Likelihood of Defecting</label>
+      <!-- <label for="defectability" class="primary">Likelihood of Defecting</label> -->
+
+      <div class="trustworthiness">
+        <label for="trustworthiness">How much do you trust this spy?</label>
+        <br>
+        <span>Not at all</span>
+        <!--Add your code below-->
+        <input id="trustworthiness" name="trustworthiness" type="range" min="0" max="5" step="0.5">
+
+        <span>With my life</span>
+      </div>
 
       <!-- input for trustworthiness-->
-      <input type="text" id="defectability" required>
+      <!-- <input type="text" id="defectability" required> -->
       <!-- close div for trustworthiness-->
+
+
+      <!-- close final div  -->
     </div>
+    <!-- close form -->
+    <button type="submit" id="submit">Submit Spy Details</button>
+  </form>
 
-    <!-- close final div  -->
+  <div id="spy-list">
+    <ul>
+    </ul>
   </div>
-  <!-- close form -->
-  <button type="submit" id="submit">Submit spy details</button>
-</form>
-
-<div id="spy-list">
-  <ul>
-  </ul>
-</div>
-<!-- eliminate all spies - delete all - button -->
-<input id="delete-all" type="button" value="Eliminate All Spies"/>
-
+  <!-- eliminate all spies - delete all - button -->
+  <!-- is a div useful here? I want to stop the delete all button from jumping up a line after I hit it -->
+  <div>
+    <input id="delete-all" type="button" value="Eliminate All Spies"/>
+  </div>
 
 </body>
 </html>
