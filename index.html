@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <title>D I Spy</title>
   <script src="js/app.js"></script>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <h1>D I Spy</h1>
 
   <!-- open the form -->
-  <form class="orangey">
+  <form id="form">
 
     <!-- open a div that will include the whole form -->
     <div id="form-wrapper">
@@ -18,39 +18,44 @@
       <!-- open a div for the first form item -->
       <div class="form-item">
         <!-- label for name of spy -->
-        <label for="title" class="primary">Title</label>
+        <label for="name" class="primary">Name</label>
         <!-- input for name of spy -->
-        <input type="text" id="title" required/>
+        <input type="text" id="name" required/>
         <!-- close div for name of spy -->
+
       </div>
 
       <!-- open a div for the second form item -->
-      <!-- form for country of origin -->
+      <div class="form-item">
         <!-- label for country of origin -->
-          <!-- input for country of origin -->
-          <!-- close div for country of origin -->
-
+        <label for="government" class="primary">Government</label>
+        <!-- input for country of origin -->
+        <input type="text" id="government" required/>
+        <!-- close div for country of origin -->
+      </div>
 
       <!-- open a div for the third form item -->
-      <!-- form for allegiance - friend or foe -->
-      <!-- label for allegiance-->
-        <!-- input for allegiance-->
-        <!-- close div for allegiance-->
+      <div class="form"
+      <!-- label for trustworthiness-->
+      <label for="defectability" class="primary">Likelihood of Defecting</label>
 
-      <!-- open a div for the fourth form item -->
-      <!-- form for trustworthiness/likelihood of defection -->
-      <!-- label for trustworthiness->
-        <!-- input for trustworthiness-->
-        <!-- close div for trustworthiness-->
-
-
-<!-- close final div  -->
+      <!-- input for trustworthiness-->
+      <input type="text" id="defectability" required>
+      <!-- close div for trustworthiness-->
     </div>
-    <!-- close form -->
-  </form>
 
-  <!-- eliminate all spies - delete all - button -->
+    <!-- close final div  -->
+  </div>
+  <!-- close form -->
+  <button type="submit" id="submit">Submit spy details</button>
+</form>
 
+<div id="spy-list">
+  <ul>
+  </ul>
+</div>
+<!-- eliminate all spies - delete all - button -->
+<input id="delete-all" type="button" value="Eliminate All Spies"/>
 
 
 </body>

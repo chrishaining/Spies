@@ -1,5 +1,6 @@
-.orangey {
-  color: #FC4445;
+#form {
+  color: #55BCC9;
+  font-weight: bold;
 }
 
 #form-wrapper {
@@ -8,8 +9,18 @@
   flex-direction: row;
 }
 
+#spy-list {
+  background-color: #CAFAFE;
+}
 
+li {
+  list-style: none;
+}
 
+#delete-all {
+  background-color: #CAFAFE;
+  font-weight: bold;
+}
 .aquish {
   color: #3FEEE6;
 }
