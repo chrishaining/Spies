@@ -1,0 +1,31 @@
+.orangey {
+  color: #FC4445;
+}
+
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.aquish {
+  color: #3FEEE6;
+}
+
+.greeney {
+  color: #55BCC9;
+}
+
+.light-blue {
+  color: #97CAEF;
+}
+
+.lightest-blue {
+  color: #CAFAFE;
+}
+
+.bold {
+  font-weight: bold;
+}
