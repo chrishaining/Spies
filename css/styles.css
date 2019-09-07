@@ -1,34 +1,41 @@
-.body {
-  background-color: #CAFAFE;
+
+
+#body {
+  background-color: #C96567;
 
 }
 
 .titles {
-  background-color: #97CAEF;
+  background-color: #644E5B;
+  text-align: center;
+  padding: 0;
 }
 
 #form {
-  background-color: #55BCC9;
+  background-color: #314455;
   font-weight: bold;
 }
 
 
 /* .form-item {
-  background-color: #CAFAFE;
+background-color: #CAFAFE;
 } */
 
 #form-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border: none;
+  padding: 8px 16px;
+  /* margin: 4px 2px; */
 }
 
 /* #spy-list {
-  background-color: #CAFAFE;
+background-color: #CAFAFE;
 } */
 
 .spy-list-item {
-background-color: #55BCC9;
+  background-color: #97AABD;
 
 }
 
@@ -36,16 +43,31 @@ li {
   list-style: none;
 }
 
+.button {
+  text-align: center;
+}
+
 #submit {
-  background-color: #3FEEE6;
+  background-color: #FFE400;
   font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
 }
 
 #delete-all {
-  background-color: #C3073F;
+  background-color: red;
   font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  /* text-decoration: none; */
+  /* display: inline-block; */
 }
-.aquish {
+
+/* .aquish {
   color: #3FEEE6;
 }
 
@@ -59,7 +81,7 @@ li {
 
 .lightest-blue {
   color: #CAFAFE;
-}
+} */
 
 .bold {
   font-weight: bold;
