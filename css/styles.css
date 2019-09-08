@@ -1,42 +1,93 @@
+/* * {
+  margin: 0;
+  /* padding: 0; */
+/* } */
 
 
 #body {
-  background-color: #C96567;
+  background-color: #8FC1E3;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 
 }
 
 .titles {
-  background-color: #644E5B;
+  background-color: #501F3A;
+  color: #CCCCCC;
   text-align: center;
   padding: 0;
 }
 
-#form {
-  background-color: #314455;
-  font-weight: bold;
-}
-
-
-/* .form-item {
-background-color: #CAFAFE;
-} */
-
 #form-wrapper {
-  width: 100%;
-  display: flex;
+  /* width: 50%; */
+  display: inline-block;
   flex-direction: column;
   border: none;
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
+  /* text-align: justify; */
   /* margin: 4px 2px; */
 }
 
-/* #spy-list {
-background-color: #CAFAFE;
-} */
+#form {
+  background-color: #14A098;
+  font-weight: bold;
+  border: none;
+  /* padding: 8px 16px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.form-item2 {
+  background-color: #41B3A3;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+label {
+  padding: 0.5em;
+  margin-right: 1%;
+}
+
+input.textbox {
+  padding: 1em;
+  margin: 1em;
+  width: 20%;
+}
+
+
+.radio {
+  font-size: 0.75em;
+}
+
+
+#spy-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 1em;
+  opacity: 0.25;
+
+}
 
 .spy-list-item {
-  background-color: #97AABD;
-
+  background-color: #501F3A;
+  color: #CCCCCC;
+  border-radius: 15% 1% 15% 1%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 li {
@@ -45,10 +96,13 @@ li {
 
 .button {
   text-align: center;
+  border-radius: 5%;
+  margin: 0.5em;
+  padding: 0.5em;
 }
 
 #submit {
-  background-color: #FFE400;
+  background-color: #FAED26;
   font-weight: bold;
   font-size: 16px;
   border: none;
@@ -60,28 +114,13 @@ li {
   background-color: red;
   font-weight: bold;
   font-size: 16px;
-  border: none;
+  /* border: none; */
   padding: 15px 32px;
   text-align: center;
+
   /* text-decoration: none; */
   /* display: inline-block; */
 }
-
-/* .aquish {
-  color: #3FEEE6;
-}
-
-.greeney {
-  color: #55BCC9;
-}
-
-.light-blue {
-  color: #97CAEF;
-}
-
-.lightest-blue {
-  color: #CAFAFE;
-} */
 
 .bold {
   font-weight: bold;

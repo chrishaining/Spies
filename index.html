@@ -21,34 +21,33 @@
         <!-- label for name of spy -->
         <label for="name" class="primary">Name</label>
         <!-- input for name of spy -->
-        <input type="text" id="name" required/>
+        <input class="textbox" type="text" id="name" required/>
         <!-- close div for name of spy -->
-
       </div>
 
       <!-- open a div for the second form item  - could make this a dropdown -->
-      <div class="form-item">
+      <div class="form-item2">
         <!-- label for country of origin -->
         <label for="government" class="primary">Government</label>
         <!-- input for country of origin -->
-        <input type="text" id="government" required/>
+        <input class="textbox" type="text" id="government" required/>
         <!-- close div for country of origin -->
       </div>
 
       <!-- open a div for the third form item -->
-      <div id="skill">
+      <div class="form-item">
 
         <label for="skill">Skill at killing</label>
-        <input type="radio" name="skill" value="low">Low</input>
-        <input type="radio" name="skill" value="high">High</input>
+        <input class="radio" type="radio" name="skill" value="low">Low</input>
+        <input class="radio" type="radio" name="skill" value="high">High</input>
       </div>
       <!-- label for trustworthiness-->
       <!-- <label for="defectability" class="primary">Likelihood of Defecting</label> -->
-      <div id="trustworthiness">
+      <div class="form-item2">
         <label for="trustworthiness">How much do you trust this spy?</label>
         <span>Not at all</span>
         <!--Add your code below-->
-        <input id="trustworthiness" name="trustworthiness" type="range" min="0" max="5" step="0.5">
+        <input name="trustworthiness" type="range" min="0" max="5" step="0.5">
 
         <span>With my life</span>
       </div>
@@ -62,8 +61,8 @@
     </div>
     <!-- close form -->
     <div class="button">
-    <button type="submit" id="submit">Submit Spy Details</button>
-  </div>
+      <button type="submit" id="submit">Submit Spy Details</button>
+    </div>
   </form>
 
   <div id="spy-list">

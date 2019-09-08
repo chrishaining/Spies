@@ -20,7 +20,7 @@ const createSpy = function (form) {
   const spy = document.createElement('li');
   spy.classList.add('spy-list-item');
 
-  const name = document.createElement('h3');
+  const name = document.createElement('h2');
   name.textContent = `Name: ${form.name.value}`;
   spy.appendChild(name);
 
