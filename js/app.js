@@ -1,3 +1,11 @@
+// four steps to cover when creating the JavaScript
+// . what is the parent?
+// 2. Create a child that we will append to that parent?
+// 3. Set the attributes of the child
+// 4. Append the child to the parent
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#form');
   form.addEventListener('submit', handleFormSubmit);
@@ -6,17 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
+//Why are we preventing a default?
 const handleFormSubmit = function (event) {
   event.preventDefault();
 
-  const spy = createSpy(event.target);
+//how does the app know what the event is?
+  const spy = createSpyLi(event.target);
   const listOfSpies = document.querySelector('#spy-list');
+  // const unorderedList = document.createElement('ul')
+  // listOfSpies.appendChild(unorderedList)
+
+
   listOfSpies.appendChild(spy);
+
+
 
   event.target.reset();
 }
 
-const createSpy = function (form) {
+const createSpyLi = function (form) {
   const spy = document.createElement('li');
   spy.classList.add('spy-list-item');
 
@@ -46,7 +62,6 @@ const createSpy = function (form) {
   //         var itemToRemove = document.querySelector(spy);
   //         itemToRemove.parentNode.removeChild(itemToRemove);
   //       }
-
 
   return spy;
 }
